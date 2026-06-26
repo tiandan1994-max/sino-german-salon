@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts – loaded in layout <head> */
+
+@layer base {
+  :root {
+    --navy-900: #060E1F;
+    --brand:    #0D2E5E;
+    --gold-500: #C8972A;
+    --gold-400: #E5C060;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif;
+    color: #1E293B;
+    background: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: #F1F5F9; }
+  ::-webkit-scrollbar-thumb { background: #0D2E5E; border-radius: 4px; }
+
+  h1, h2, h3, h4, h5 {
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  /* Gold divider line used across sections */
+  .gold-divider {
+    @apply w-12 h-0.5 bg-gold-500 mx-auto;
+  }
+
+  /* Section padding standard */
+  .section-padding {
+    @apply py-20 md:py-28 px-4 md:px-8 lg:px-16;
+  }
+
+  /* Glossy card */
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl;
+  }
+
+  /* Navy tag pill */
+  .tag-pill {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium
+           bg-navy-50 text-navy-700 border border-navy-100;
+  }
+}
+
+@layer utilities {
+  /* Gradient text utility */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #E5C060 0%, #C8972A 50%, #A87920 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #3B82F6 0%, #0D2E5E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
