@@ -80,34 +80,13 @@ export default function HuijieSection() {
           {/* Photo side */}
           <AnimatedSection direction="right" delay={0.15}>
             <div className="relative">
-              {/*
-                TODO: Replace placeholder with actual photo
-                Place 惠姐.jpg into /public/images/huijie-wealth.jpg
-                Then replace the div below with:
-                <div className="relative w-full aspect-[3/4] max-w-sm mx-auto rounded-2xl overflow-hidden shadow-2xl">
-                  <Image src="/images/huijie-wealth.jpg" alt="德资惠姐" fill className="object-cover" />
-                </div>
-              */}
-              <div
-                className="w-full max-w-sm mx-auto aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl
-                           bg-gradient-to-br from-amber-50 to-yellow-100 border-4 border-gold-400/30 relative"
-              >
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8">
-                  <div
-                    className="w-28 h-28 rounded-full flex items-center justify-center border-4 border-gold-400/60"
-                    style={{ background: 'linear-gradient(135deg, #F0D48A, #C8972A)' }}
-                  >
-                    <span className="text-white font-bold text-4xl">惠</span>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-navy-900 font-bold text-xl mb-1">德资惠姐</p>
-                    <p className="text-gold-600 text-sm font-medium">财富顾问</p>
-                    <p className="text-slate-400 text-[10px] mt-3">
-                      请将 惠姐.jpg 放入<br />/public/images/huijie-wealth.jpg
-                    </p>
-                  </div>
-                </div>
-
+              <div className="w-full max-w-sm mx-auto aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative border-4 border-gold-400/30">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/huijie-wealth.jpg"
+                  alt="德资惠姐 – 德国资产管理集团财富顾问"
+                  className="w-full h-full object-cover object-top"
+                />
                 {/* Bottom overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-900/90 to-transparent p-5">
                   <p className="text-white font-bold">德资惠姐</p>
