@@ -32,31 +32,14 @@ export default function HostSection() {
             <div className="relative">
               {/* Background decoration */}
               <div className="absolute -inset-4 bg-gradient-to-br from-navy-800/10 to-gold-500/10 rounded-3xl" />
-              {/*
-                TODO: Replace placeholder with actual photo
-                Place 能源论坛主持人.jpg into /public/images/host-energy-forum.jpg
-                Then replace the div below with:
-                <Image src="/images/host-energy-forum.jpg" alt="惠姐" fill className="object-cover rounded-2xl" />
-              */}
-              <div
-                className="relative w-full aspect-[3/4] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl
-                           bg-gradient-to-br from-sky-400/30 via-blue-500/20 to-green-400/20 border border-white"
-              >
-                {/* Placeholder with styling to match the green/blue theme of the original poster */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8">
-                  <div className="w-28 h-28 rounded-full bg-white/20 border-4 border-white/40 flex items-center justify-center">
-                    <span className="text-white/60 text-4xl font-bold">惠</span>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-white/80 font-bold text-xl mb-1">惠姐</p>
-                    <p className="text-white/50 text-xs">能源论坛主持人.jpg</p>
-                    <p className="text-white/40 text-[10px] mt-2">
-                      请将图片放入 /public/images/host-energy-forum.jpg
-                    </p>
-                  </div>
-                </div>
-
-                {/* Decorative tag at bottom */}
+              <div className="relative w-full aspect-[3/4] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/host-energy-forum.jpg"
+                  alt="惠姐 – 中德商圈沙龙能源论坛主持人"
+                  className="w-full h-full object-cover object-top"
+                />
+                {/* Bottom name overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-900/80 to-transparent p-6">
                   <p className="text-white font-bold text-lg">惠姐</p>
                   <p className="text-gold-400 text-sm">中德商圈沙龙 · 能源论坛主持人</p>
